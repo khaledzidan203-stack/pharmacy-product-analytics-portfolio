@@ -1,0 +1,27 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local/private data
+private/
+raw/
+secrets.*
+.env
+*.xlsb
+*.pbix.tmp
+
+# SQL / local exports
+*.bak
+*.mdf
+*.ldf
+
+# Generated local server logs
+*.log

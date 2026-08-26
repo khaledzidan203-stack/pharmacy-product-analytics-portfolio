@@ -1,0 +1,130 @@
+SKU,Item_Name,Category,Sub_Category,Supplier_Name,RSP,SOH,Inventory_Value,Inventory_Risk_Value,Price_Range
+SKU00001,Sample Product 00001,Medical Devices,Home Diagnostics,Supplier 003,8.26,5,41.3,41.3,Low < 25
+SKU00017,Sample Product 00017,General Merchandise,Travel Health,Supplier 019,183.96,35,6438.6,6438.6,High 100-299
+SKU00025,Sample Product 00025,Medical Devices,Mobility Aids,Supplier 011,299.29,50,14964.5,14964.5,High 100-299
+SKU00035,Sample Product 00035,OTC & Wellness,Vitamins,Supplier 024,13.77,62,853.74,853.74,Low < 25
+SKU00080,Sample Product 00080,General Merchandise,Accessories,Supplier 013,22.07,61,1346.27,1346.27,Low < 25
+SKU00096,Sample Product 00096,OTC & Wellness,Vitamins,Supplier 003,72.54,15,1088.1,1088.1,Medium 25-99
+SKU00108,Sample Product 00108,Nutrition,Healthy Snacks,Supplier 002,171.57,7,1200.99,1200.99,High 100-299
+SKU00127,Sample Product 00127,General Merchandise,Travel Health,Supplier 019,17.94,39,699.66,699.66,Low < 25
+SKU00135,Sample Product 00135,OTC & Wellness,Vitamins,Supplier 026,17.72,25,443.0,443.0,Low < 25
+SKU00145,Sample Product 00145,Medical Devices,Home Diagnostics,Supplier 003,529.48,38,20120.24,20120.24,Premium 300+
+SKU00151,Sample Product 00151,Personal Care,Skin Care,Supplier 026,52.65,58,3053.7,3053.7,Medium 25-99
+SKU00154,Sample Product 00154,OTC & Wellness,Vitamins,Supplier 018,29.68,50,1484.0,1484.0,Medium 25-99
+SKU00160,Sample Product 00160,Medical Devices,Mobility Aids,Supplier 011,9.49,43,408.07,408.07,Low < 25
+SKU00161,Sample Product 00161,Medical Devices,Mobility Aids,Supplier 011,140.57,64,8996.48,8996.48,High 100-299
+SKU00179,Sample Product 00179,Personal Care,Hygiene,Supplier 024,30.25,40,1210.0,1210.0,Medium 25-99
+SKU00191,Sample Product 00191,General Merchandise,Travel Health,Supplier 019,12.86,28,360.08,360.08,Low < 25
+SKU00195,Sample Product 00195,Personal Care,Oral Care,Supplier 011,200.41,16,3206.56,3206.56,High 100-299
+SKU00209,Sample Product 00209,OTC & Wellness,Cold & Allergy,Supplier 001,13.87,5,69.35,69.35,Low < 25
+SKU00234,Sample Product 00234,Medical Devices,First Aid,Supplier 001,35.61,0,0.0,0.0,Medium 25-99
+SKU00255,Sample Product 00255,Personal Care,Oral Care,Supplier 001,14.72,36,529.92,529.92,Low < 25
+SKU00257,Sample Product 00257,Nutrition,Sports Nutrition,Supplier 029,88.64,48,4254.72,4254.72,Medium 25-99
+SKU00258,Sample Product 00258,Personal Care,Oral Care,Supplier 003,69.29,28,1940.12,1940.12,Medium 25-99
+SKU00260,Sample Product 00260,OTC & Wellness,Cold & Allergy,Supplier 009,80.57,57,4592.49,4592.49,Medium 25-99
+SKU00288,Sample Product 00288,Medical Devices,First Aid,Supplier 030,90.92,2,181.84,181.84,Medium 25-99
+SKU00292,Sample Product 00292,General Merchandise,Travel Health,Supplier 019,73.66,33,2430.78,2430.78,Medium 25-99
+SKU00305,Sample Product 00305,General Merchandise,Seasonal Care,Supplier 011,57.14,1,57.14,57.14,Medium 25-99
+SKU00327,Sample Product 00327,OTC & Wellness,Cold & Allergy,Supplier 013,229.26,46,10545.96,10545.96,High 100-299
+SKU00330,Sample Product 00330,Nutrition,Adult Nutrition,Supplier 010,31.42,48,1508.16,1508.16,Medium 25-99
+SKU00331,Sample Product 00331,Nutrition,Hydration,Supplier 026,212.68,20,4253.6,4253.6,High 100-299
+SKU00344,Sample Product 00344,OTC & Wellness,Digestive Care,Supplier 019,49.91,51,2545.41,2545.41,Medium 25-99
+SKU00353,Sample Product 00353,Personal Care,Hair Care,Supplier 002,186.63,44,8211.72,8211.72,High 100-299
+SKU00367,Sample Product 00367,OTC & Wellness,Digestive Care,Supplier 015,11.19,4,44.76,44.76,Low < 25
+SKU00385,Sample Product 00385,General Merchandise,Baby Essentials,Supplier 020,53.89,63,3395.07,3395.07,Medium 25-99
+SKU00387,Sample Product 00387,OTC & Wellness,Digestive Care,Supplier 013,47.16,55,2593.8,2593.8,Medium 25-99
+SKU00390,Sample Product 00390,Nutrition,Sports Nutrition,Supplier 009,58.84,53,3118.52,3118.52,Medium 25-99
+SKU00396,Sample Product 00396,OTC & Wellness,Digestive Care,Supplier 016,6.26,15,93.9,93.9,Low < 25
+SKU00397,Sample Product 00397,OTC & Wellness,Digestive Care,Supplier 008,348.24,64,22287.36,22287.36,Premium 300+
+SKU00398,Sample Product 00398,General Merchandise,Seasonal Care,Supplier 018,93.81,24,2251.44,2251.44,Medium 25-99
+SKU00417,Sample Product 00417,General Merchandise,Seasonal Care,Supplier 030,72.37,34,2460.58,2460.58,Medium 25-99
+SKU00418,Sample Product 00418,General Merchandise,Travel Health,Supplier 019,105.7,47,4967.9,4967.9,High 100-299
+SKU00423,Sample Product 00423,Medical Devices,Mobility Aids,Supplier 011,155.86,39,6078.54,6078.54,High 100-299
+SKU00434,Sample Product 00434,Medical Devices,Mobility Aids,Supplier 011,98.37,16,1573.92,1573.92,Medium 25-99
+SKU00439,Sample Product 00439,General Merchandise,Seasonal Care,Supplier 020,76.0,42,3192.0,3192.0,Medium 25-99
+SKU00444,Sample Product 00444,OTC & Wellness,Vitamins,Supplier 023,56.91,21,1195.11,1195.11,Medium 25-99
+SKU00492,Sample Product 00492,Personal Care,Skin Care,Supplier 027,19.31,26,502.06,502.06,Low < 25
+SKU00494,Sample Product 00494,OTC & Wellness,Digestive Care,Supplier 015,8.19,8,65.52,65.52,Low < 25
+SKU00500,Sample Product 00500,Medical Devices,Home Diagnostics,Supplier 003,178.46,40,7138.4,7138.4,High 100-299
+SKU00505,Sample Product 00505,OTC & Wellness,Vitamins,Supplier 006,6.43,38,244.34,244.34,Low < 25
+SKU00508,Sample Product 00508,Nutrition,Hydration,Supplier 022,16.62,63,1047.06,1047.06,Low < 25
+SKU00524,Sample Product 00524,Nutrition,Sports Nutrition,Supplier 007,166.68,13,2166.84,2166.84,High 100-299
+SKU00530,Sample Product 00530,Personal Care,Oral Care,Supplier 021,16.1,17,273.7,273.7,Low < 25
+SKU00533,Sample Product 00533,OTC & Wellness,Digestive Care,Supplier 006,11.15,23,256.45,256.45,Low < 25
+SKU00539,Sample Product 00539,General Merchandise,Baby Essentials,Supplier 005,4.22,10,42.2,42.2,Low < 25
+SKU00580,Sample Product 00580,Personal Care,Hygiene,Supplier 003,295.01,34,10030.34,10030.34,High 100-299
+SKU00587,Sample Product 00587,Personal Care,Hygiene,Supplier 024,176.29,50,8814.5,8814.5,High 100-299
+SKU00592,Sample Product 00592,Personal Care,Skin Care,Supplier 028,67.16,36,2417.76,2417.76,Medium 25-99
+SKU00612,Sample Product 00612,Personal Care,Oral Care,Supplier 028,291.39,13,3788.07,3788.07,High 100-299
+SKU00627,Sample Product 00627,General Merchandise,Accessories,Supplier 017,76.35,9,687.15,687.15,Medium 25-99
+SKU00637,Sample Product 00637,Medical Devices,Monitoring Supplies,Supplier 011,379.32,45,17069.4,17069.4,Premium 300+
+SKU00651,Sample Product 00651,Nutrition,Hydration,Supplier 029,297.99,61,18177.39,18177.39,High 100-299
+SKU00666,Sample Product 00666,Personal Care,Skin Care,Supplier 001,179.54,21,3770.34,3770.34,High 100-299
+SKU00671,Sample Product 00671,OTC & Wellness,Pain Relief,Supplier 019,97.35,3,292.05,292.05,Medium 25-99
+SKU00680,Sample Product 00680,Medical Devices,Home Diagnostics,Supplier 003,296.15,25,7403.75,7403.75,High 100-299
+SKU00687,Sample Product 00687,OTC & Wellness,Digestive Care,Supplier 015,53.02,53,2810.06,2810.06,Medium 25-99
+SKU00703,Sample Product 00703,General Merchandise,Baby Essentials,Supplier 020,99.29,23,2283.67,2283.67,Medium 25-99
+SKU00714,Sample Product 00714,Personal Care,Skin Care,Supplier 009,19.58,45,881.1,881.1,Low < 25
+SKU00725,Sample Product 00725,Medical Devices,Monitoring Supplies,Supplier 001,60.97,40,2438.8,2438.8,Medium 25-99
+SKU00734,Sample Product 00734,Personal Care,Skin Care,Supplier 011,10.95,3,32.85,32.85,Low < 25
+SKU00742,Sample Product 00742,Personal Care,Hair Care,Supplier 019,70.8,15,1062.0,1062.0,Medium 25-99
+SKU00755,Sample Product 00755,Personal Care,Skin Care,Supplier 025,7.59,6,45.54,45.54,Low < 25
+SKU00779,Sample Product 00779,Medical Devices,Mobility Aids,Supplier 011,39.04,14,546.56,546.56,Medium 25-99
+SKU00793,Sample Product 00793,OTC & Wellness,Digestive Care,Supplier 015,53.94,62,3344.28,3344.28,Medium 25-99
+SKU00800,Sample Product 00800,Nutrition,Adult Nutrition,Supplier 027,274.01,3,822.03,822.03,High 100-299
+SKU00801,Sample Product 00801,Medical Devices,Monitoring Supplies,Supplier 010,139.43,61,8505.23,8505.23,High 100-299
+SKU00802,Sample Product 00802,Medical Devices,Monitoring Supplies,Supplier 025,225.63,10,2256.3,2256.3,High 100-299
+SKU00809,Sample Product 00809,Nutrition,Healthy Snacks,Supplier 002,53.85,37,1992.45,1992.45,Medium 25-99
+SKU00837,Sample Product 00837,General Merchandise,Accessories,Supplier 023,14.0,62,868.0,868.0,Low < 25
+SKU00841,Sample Product 00841,OTC & Wellness,Digestive Care,Supplier 027,232.82,45,10476.9,10476.9,High 100-299
+SKU00850,Sample Product 00850,General Merchandise,Seasonal Care,Supplier 019,164.6,1,164.6,164.6,High 100-299
+SKU00873,Sample Product 00873,OTC & Wellness,Vitamins,Supplier 010,216.04,23,4968.92,4968.92,High 100-299
+SKU00878,Sample Product 00878,General Merchandise,Accessories,Supplier 007,48.89,36,1760.04,1760.04,Medium 25-99
+SKU00889,Sample Product 00889,General Merchandise,Baby Essentials,Supplier 017,13.94,11,153.34,153.34,Low < 25
+SKU00894,Sample Product 00894,Nutrition,Adult Nutrition,Supplier 008,84.62,16,1353.92,1353.92,Medium 25-99
+SKU00910,Sample Product 00910,General Merchandise,Seasonal Care,Supplier 027,21.07,0,0.0,0.0,Low < 25
+SKU00918,Sample Product 00918,Nutrition,Adult Nutrition,Supplier 013,282.94,56,15844.64,15844.64,High 100-299
+SKU00969,Sample Product 00969,OTC & Wellness,Digestive Care,Supplier 017,8.05,29,233.45,233.45,Low < 25
+SKU00984,Sample Product 00984,Nutrition,Healthy Snacks,Supplier 017,21.71,61,1324.31,1324.31,Low < 25
+SKU01002,Sample Product 01002,Personal Care,Hygiene,Supplier 002,43.89,42,1843.38,1843.38,Medium 25-99
+SKU01012,Sample Product 01012,General Merchandise,Seasonal Care,Supplier 021,21.97,61,1340.17,1340.17,Low < 25
+SKU01017,Sample Product 01017,Personal Care,Oral Care,Supplier 023,188.95,5,944.75,944.75,High 100-299
+SKU01019,Sample Product 01019,OTC & Wellness,Digestive Care,Supplier 019,75.91,21,1594.11,1594.11,Medium 25-99
+SKU01022,Sample Product 01022,Medical Devices,Monitoring Supplies,Supplier 002,7.38,27,199.26,199.26,Low < 25
+SKU01025,Sample Product 01025,Personal Care,Oral Care,Supplier 006,116.11,41,4760.51,4760.51,High 100-299
+SKU01054,Sample Product 01054,Nutrition,Hydration,Supplier 023,54.71,1,54.71,54.71,Medium 25-99
+SKU01070,Sample Product 01070,OTC & Wellness,Vitamins,Supplier 030,126.11,16,2017.76,2017.76,High 100-299
+SKU01107,Sample Product 01107,Nutrition,Hydration,Supplier 004,277.16,18,4988.88,4988.88,High 100-299
+SKU01136,Sample Product 01136,Medical Devices,Monitoring Supplies,Supplier 001,4.65,48,223.2,223.2,Low < 25
+SKU01140,Sample Product 01140,Personal Care,Hair Care,Supplier 007,27.38,64,1752.32,1752.32,Medium 25-99
+SKU01162,Sample Product 01162,Personal Care,Oral Care,Supplier 011,44.28,44,1948.32,1948.32,Medium 25-99
+SKU01170,Sample Product 01170,General Merchandise,Baby Essentials,Supplier 026,188.21,20,3764.2,3764.2,High 100-299
+SKU01176,Sample Product 01176,OTC & Wellness,Pain Relief,Supplier 025,99.73,53,5285.69,5285.69,Medium 25-99
+SKU01193,Sample Product 01193,General Merchandise,Baby Essentials,Supplier 009,20.18,58,1170.44,1170.44,Low < 25
+SKU01198,Sample Product 01198,Nutrition,Healthy Snacks,Supplier 006,293.7,11,3230.7,3230.7,High 100-299
+SKU01201,Sample Product 01201,Medical Devices,Monitoring Supplies,Supplier 009,20.6,55,1133.0,1133.0,Low < 25
+SKU01223,Sample Product 01223,OTC & Wellness,Pain Relief,Supplier 029,155.4,5,777.0,777.0,High 100-299
+SKU01234,Sample Product 01234,Nutrition,Adult Nutrition,Supplier 004,55.38,6,332.28,332.28,Medium 25-99
+SKU01238,Sample Product 01238,Personal Care,Hygiene,Supplier 020,9.6,49,470.4,470.4,Low < 25
+SKU01271,Sample Product 01271,Medical Devices,Home Diagnostics,Supplier 003,71.17,41,2917.97,2917.97,Medium 25-99
+SKU01272,Sample Product 01272,Medical Devices,Mobility Aids,Supplier 011,126.77,24,3042.48,3042.48,High 100-299
+SKU01293,Sample Product 01293,OTC & Wellness,Cold & Allergy,Supplier 013,11.29,57,643.53,643.53,Low < 25
+SKU01299,Sample Product 01299,General Merchandise,Accessories,Supplier 004,263.77,32,8440.64,8440.64,High 100-299
+SKU01300,Sample Product 01300,Nutrition,Adult Nutrition,Supplier 004,6.5,57,370.5,370.5,Low < 25
+SKU01302,Sample Product 01302,Personal Care,Skin Care,Supplier 012,21.28,0,0.0,0.0,Low < 25
+SKU01306,Sample Product 01306,Personal Care,Hygiene,Supplier 009,37.15,2,74.3,74.3,Medium 25-99
+SKU01320,Sample Product 01320,General Merchandise,Baby Essentials,Supplier 002,54.62,50,2731.0,2731.0,Medium 25-99
+SKU01335,Sample Product 01335,General Merchandise,Travel Health,Supplier 019,95.42,7,667.94,667.94,Medium 25-99
+SKU01356,Sample Product 01356,OTC & Wellness,Vitamins,Supplier 021,90.09,11,990.99,990.99,Medium 25-99
+SKU01375,Sample Product 01375,Medical Devices,First Aid,Supplier 003,237.63,28,6653.64,6653.64,High 100-299
+SKU01386,Sample Product 01386,OTC & Wellness,Cold & Allergy,Supplier 017,20.29,32,649.28,649.28,Low < 25
+SKU01390,Sample Product 01390,Personal Care,Oral Care,Supplier 017,17.84,53,945.52,945.52,Low < 25
+SKU01391,Sample Product 01391,General Merchandise,Travel Health,Supplier 019,48.34,18,870.12,870.12,Medium 25-99
+SKU01403,Sample Product 01403,Nutrition,Healthy Snacks,Supplier 029,89.98,54,4858.92,4858.92,Medium 25-99
+SKU01426,Sample Product 01426,Nutrition,Adult Nutrition,Supplier 026,57.09,19,1084.71,1084.71,Medium 25-99
+SKU01450,Sample Product 01450,OTC & Wellness,Vitamins,Supplier 011,89.25,58,5176.5,5176.5,Medium 25-99
+SKU01469,Sample Product 01469,Medical Devices,Home Diagnostics,Supplier 003,64.71,14,905.94,905.94,Medium 25-99
+SKU01471,Sample Product 01471,OTC & Wellness,Digestive Care,Supplier 001,84.49,5,422.45,422.45,Medium 25-99
+SKU01484,Sample Product 01484,OTC & Wellness,Vitamins,Supplier 028,546.57,15,8198.55,8198.55,Premium 300+
+SKU01486,Sample Product 01486,Nutrition,Hydration,Supplier 030,205.25,48,9852.0,9852.0,High 100-299
+SKU01495,Sample Product 01495,OTC & Wellness,Cold & Allergy,Supplier 027,7.81,64,499.84,499.84,Low < 25

@@ -1,0 +1,26 @@
+Column,Type,Definition,Example
+SKU,text,Synthetic unique product identifier.,SKU00001
+Item_Name,text,Synthetic product display name.,Sample Product 00001
+Status,text,Portfolio status: Active or Blocked.,Active
+Creation_Month,text,Synthetic creation month in YYYY-MM format.,2026-01
+RSP,decimal,"Retail selling price in SAR, synthetic.",8.26
+TGM_Pct,decimal,Total gross margin percentage stored as decimal.,0.3
+Category,text,High-level product category.,Medical Devices
+Sub_Category,text,Product sub-category.,Home Diagnostics
+Manufacturer_Code,text,Synthetic manufacturer code.,MFG003
+Manufacturer_Name,text,Synthetic manufacturer name.,Manufacturer 003
+Supplier_Code,text,Synthetic supplier code.,SUP003
+Supplier_Name,text,Synthetic supplier name.,Supplier 003
+Regulatory_Code,text,Synthetic placeholder regulatory identifier.,REG-197107
+Scientific_Name,text,Synthetic generic/scientific descriptor.,Generic Ingredient 037
+Legal_Status,text,Synthetic sale-control classification.,General Sale
+Purchase_Qty,integer,Synthetic purchased quantity.,8
+Sales_Qty,integer,Synthetic sold quantity.,0
+SOH,integer,Synthetic stock on hand quantity.,5
+Sales_Value,decimal,RSP × Sales_Qty.,0.0
+Profit_Value,decimal,Sales_Value × TGM_Pct.,0.0
+Inventory_Value,decimal,RSP × SOH; retail-value proxy for demonstration.,41.3
+Zero_Sales_Flag,text,Active Zero Sales only when Status=Active and Sales_Qty=0.,Active Zero Sales
+Inventory_Risk_Value,decimal,Inventory_Value for Active Zero Sales SKUs; otherwise 0.,41.3
+Price_Range,text,Price band derived from RSP.,Low < 25
+Is_Active,integer,1 for Active and 0 for Blocked.,1

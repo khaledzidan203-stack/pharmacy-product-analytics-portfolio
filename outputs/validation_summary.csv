@@ -1,0 +1,12 @@
+Metric,CSV_Python,SQL_Expected,Power_BI_Expected,HTML_Expected,Match
+Total SKUs,1500,Recalculate after import,Recalculate after model load,Calculated in browser,Pending cross-tool run
+Active SKUs,1225,Recalculate after import,Recalculate after model load,Calculated in browser,Pending cross-tool run
+Blocked SKUs,275,Recalculate after import,Recalculate after model load,Calculated in browser,Pending cross-tool run
+Active %,81.67,Recalculate after import,Recalculate after model load,Calculated in browser,Pending cross-tool run
+Blocked %,18.33,Recalculate after import,Recalculate after model load,Calculated in browser,Pending cross-tool run
+Total Sales Quantity,37488,Recalculate after import,Recalculate after model load,Calculated in browser,Pending cross-tool run
+Total Sales Value,3722472.1,Recalculate after import,Recalculate after model load,Calculated in browser,Pending cross-tool run
+Total Profit Value,1249396.7,Recalculate after import,Recalculate after model load,Calculated in browser,Pending cross-tool run
+Average TGM% (Active),33.51,Recalculate after import,Recalculate after model load,Calculated in browser,Pending cross-tool run
+Zero Sales Active SKUs,129,Recalculate after import,Recalculate after model load,Calculated in browser,Pending cross-tool run
+Inventory Financial Risk,406473.61,Recalculate after import,Recalculate after model load,Calculated in browser,Pending cross-tool run

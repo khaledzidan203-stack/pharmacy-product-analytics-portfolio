@@ -1,0 +1,6 @@
+Category,Total_SKUs,Active_SKUs,Blocked_SKUs,Sales_Qty,Sales_Value,Profit_Value,Avg_Active_TGM_Pct,Zero_Sales_Active_SKUs,Inventory_Risk_Value
+General Merchandise,265,209,56,6068,580417.2,208647.83,34.75,26,52543.03
+Medical Devices,265,213,52,6797,772805.86,214354.16,28.3,23,112798.82
+Nutrition,274,235,39,7083,603925.94,185682.13,30.94,21,81837.33
+OTC & Wellness,331,272,59,7745,723091.67,239676.88,33.25,33,96784.65
+Personal Care,365,296,69,9795,1042231.43,401035.7,38.68,26,62509.78

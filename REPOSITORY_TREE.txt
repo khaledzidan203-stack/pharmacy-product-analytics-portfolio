@@ -1,0 +1,69 @@
+pharmacy-product-analytics-portfolio/
+├── .github/
+│   └── workflows/
+│       └── validate.yml
+├── data/
+│   ├── data_dictionary.csv
+│   ├── README.md
+│   └── sample_pharmacy_products.csv
+├── docs/
+│   ├── analytical_methodology.md
+│   ├── architecture.md
+│   ├── business_requirements.md
+│   ├── cross_tool_validation.md
+│   ├── dashboard_specification.md
+│   ├── data_model.md
+│   ├── data_privacy.md
+│   ├── github_upload.md
+│   ├── installation.md
+│   ├── kpi_definitions.md
+│   ├── public_release_verification.md
+│   └── usage.md
+├── excel/
+│   ├── Pharmacy_Assessment_Excel_Analysis.xlsx
+│   └── README.md
+├── outputs/
+│   ├── category_analysis.csv
+│   ├── key_findings_and_recommendations.csv
+│   ├── kpi_summary.csv
+│   ├── single_supplier_dependency.csv
+│   ├── supplier_analysis.csv
+│   ├── top20_by_profit.csv
+│   ├── top20_by_sales_qty.csv
+│   ├── validation_summary.csv
+│   └── zero_sales_risk.csv
+├── powerbi/
+│   ├── measures.dax
+│   ├── Pharmacy_Portfolio_Theme.json
+│   ├── power_query_m.md
+│   └── README.md
+├── screenshots/
+│   ├── dashboard_overview.png
+│   └── README.md
+├── scripts/
+│   ├── build_example_outputs.py
+│   ├── generate_synthetic_data.py
+│   └── validate_repository.py
+├── sql/
+│   ├── 00_create_database.sql
+│   ├── 01_create_schema.sql
+│   ├── 02_quality_checks.sql
+│   ├── 03_views.sql
+│   ├── 04_analysis_queries.sql
+│   ├── Pharmacy_Assessment_SQL_Outputs.xlsx
+│   └── README.md
+├── src/
+│   ├── dashboard.js
+│   └── styles.css
+├── .editorconfig
+├── .gitattributes
+├── .gitignore
+├── .nojekyll
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── index.html
+├── LICENSE
+├── PORTFOLIO_NOTES.md
+├── README.md
+├── requirements.txt
+└── SECURITY.md

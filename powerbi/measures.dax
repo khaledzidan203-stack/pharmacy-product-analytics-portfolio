@@ -1,0 +1,13 @@
+// Table name assumed: PharmacyProducts
+Total SKUs = DISTINCTCOUNT(PharmacyProducts[SKU])
+Active SKUs = CALCULATE([Total SKUs], PharmacyProducts[Status] = "Active")
+Blocked SKUs = CALCULATE([Total SKUs], PharmacyProducts[Status] = "Blocked")
+Active % = DIVIDE([Active SKUs], [Total SKUs])
+Blocked % = DIVIDE([Blocked SKUs], [Total SKUs])
+Total Sales Quantity = SUM(PharmacyProducts[Sales_Qty])
+Total Sales Value = SUM(PharmacyProducts[Sales_Value])
+Total Profit Value = SUM(PharmacyProducts[Profit_Value])
+Average TGM % Active = CALCULATE(AVERAGE(PharmacyProducts[TGM_Pct]), PharmacyProducts[Status] = "Active")
+Zero Sales Active SKUs = CALCULATE([Total SKUs], PharmacyProducts[Status] = "Active", PharmacyProducts[Sales_Qty] = 0)
+Inventory Financial Risk = CALCULATE(SUM(PharmacyProducts[Inventory_Risk_Value]), PharmacyProducts[Status] = "Active", PharmacyProducts[Sales_Qty] = 0)
+Supplier Count = DISTINCTCOUNT(PharmacyProducts[Supplier_Name])

@@ -1,0 +1,101 @@
+Category,Rank,SKU,Item_Name,Sales_Qty,Sales_Value,Profit_Value
+OTC & Wellness,1,SKU01438,Sample Product 01438,202,856.48,327.18
+OTC & Wellness,2,SKU00399,Sample Product 00399,148,4192.84,1777.76
+OTC & Wellness,3,SKU01154,Sample Product 01154,137,22207.7,7150.88
+OTC & Wellness,4,SKU00173,Sample Product 00173,127,14043.66,4929.32
+OTC & Wellness,5,SKU00016,Sample Product 00016,114,1561.8,427.93
+OTC & Wellness,6,SKU01361,Sample Product 01361,103,1417.28,408.18
+OTC & Wellness,7,SKU01294,Sample Product 01294,98,17867.36,5967.7
+OTC & Wellness,8,SKU01218,Sample Product 01218,95,13031.15,5082.15
+OTC & Wellness,9,SKU00312,Sample Product 00312,88,3311.44,1602.74
+OTC & Wellness,10,SKU00354,Sample Product 00354,78,7634.64,1946.83
+OTC & Wellness,11,SKU01263,Sample Product 01263,72,15850.08,5072.03
+OTC & Wellness,12,SKU00446,Sample Product 00446,72,3707.28,1260.48
+OTC & Wellness,13,SKU00999,Sample Product 00999,72,1026.0,380.65
+OTC & Wellness,14,SKU01404,Sample Product 01404,72,712.8,245.2
+OTC & Wellness,15,SKU00317,Sample Product 00317,70,12437.6,3942.72
+OTC & Wellness,16,SKU00270,Sample Product 00270,69,6831.0,2855.36
+OTC & Wellness,17,SKU01048,Sample Product 01048,69,6386.64,1839.35
+OTC & Wellness,18,SKU00721,Sample Product 00721,68,12471.2,4963.54
+OTC & Wellness,19,SKU01144,Sample Product 01144,68,1107.04,389.68
+OTC & Wellness,20,SKU00092,Sample Product 00092,67,1517.55,297.44
+Personal Care,1,SKU00902,Sample Product 00902,203,1177.4,536.89
+Personal Care,2,SKU00146,Sample Product 00146,184,3341.44,1236.33
+Personal Care,3,SKU00235,Sample Product 00235,178,9282.7,3295.36
+Personal Care,4,SKU00564,Sample Product 00564,168,5391.12,1865.33
+Personal Care,5,SKU00015,Sample Product 00015,160,44913.6,15989.24
+Personal Care,6,SKU00643,Sample Product 00643,137,10250.34,2870.1
+Personal Care,7,SKU00176,Sample Product 00176,136,62118.0,27269.8
+Personal Care,8,SKU01328,Sample Product 01328,118,6580.86,1928.19
+Personal Care,9,SKU01435,Sample Product 01435,113,10916.93,4410.44
+Personal Care,10,SKU00107,Sample Product 00107,111,5343.54,2746.58
+Personal Care,11,SKU00519,Sample Product 00519,110,28653.9,8653.48
+Personal Care,12,SKU00988,Sample Product 00988,100,9356.0,4247.62
+Personal Care,13,SKU00394,Sample Product 00394,97,62851.15,21997.9
+Personal Care,14,SKU00456,Sample Product 00456,93,2142.72,756.38
+Personal Care,15,SKU00688,Sample Product 00688,92,4117.92,1486.57
+Personal Care,16,SKU00722,Sample Product 00722,92,2399.36,957.34
+Personal Care,17,SKU00302,Sample Product 00302,85,5833.55,2397.59
+Personal Care,18,SKU01126,Sample Product 01126,81,12632.76,7150.14
+Personal Care,19,SKU01406,Sample Product 01406,80,505.6,182.52
+Personal Care,20,SKU00114,Sample Product 00114,79,1938.66,672.72
+Medical Devices,1,SKU00485,Sample Product 00485,149,36886.44,7856.81
+Medical Devices,2,SKU00901,Sample Product 00901,141,15078.54,4825.13
+Medical Devices,3,SKU01215,Sample Product 01215,120,34724.4,16181.57
+Medical Devices,4,SKU00717,Sample Product 00717,120,2682.0,619.54
+Medical Devices,5,SKU00070,Sample Product 00070,118,10595.22,3199.76
+Medical Devices,6,SKU01337,Sample Product 01337,117,44702.19,14751.72
+Medical Devices,7,SKU00945,Sample Product 00945,106,1752.18,453.81
+Medical Devices,8,SKU00020,Sample Product 00020,103,6106.87,1239.69
+Medical Devices,9,SKU00431,Sample Product 00431,102,4577.76,1236.0
+Medical Devices,10,SKU01008,Sample Product 01008,90,1082.7,230.62
+Medical Devices,11,SKU00206,Sample Product 00206,89,4052.17,1013.04
+Medical Devices,12,SKU00675,Sample Product 00675,86,4509.84,879.42
+Medical Devices,13,SKU01453,Sample Product 01453,83,7697.42,3232.92
+Medical Devices,14,SKU00765,Sample Product 00765,83,2797.1,998.56
+Medical Devices,15,SKU00480,Sample Product 00480,82,11392.26,3805.01
+Medical Devices,16,SKU01458,Sample Product 01458,79,4311.03,1120.87
+Medical Devices,17,SKU00967,Sample Product 00967,74,5416.8,1847.13
+Medical Devices,18,SKU00328,Sample Product 00328,73,6258.29,1383.08
+Medical Devices,19,SKU01074,Sample Product 01074,72,4677.84,935.57
+Medical Devices,20,SKU00402,Sample Product 00402,70,936.6,164.84
+Nutrition,1,SKU01336,Sample Product 01336,199,13315.09,3035.84
+Nutrition,2,SKU00772,Sample Product 00772,182,1233.96,313.43
+Nutrition,3,SKU00039,Sample Product 00039,155,13702.0,5398.59
+Nutrition,4,SKU00032,Sample Product 00032,135,11892.15,4340.63
+Nutrition,5,SKU00261,Sample Product 00261,118,22653.64,4032.35
+Nutrition,6,SKU01407,Sample Product 01407,113,5718.93,1229.57
+Nutrition,7,SKU00081,Sample Product 00081,110,4936.8,1905.6
+Nutrition,8,SKU00550,Sample Product 00550,100,1761.0,658.61
+Nutrition,9,SKU00458,Sample Product 00458,99,13672.89,2912.33
+Nutrition,10,SKU00105,Sample Product 00105,95,3303.15,1057.01
+Nutrition,11,SKU00118,Sample Product 00118,92,1517.08,500.64
+Nutrition,12,SKU01187,Sample Product 01187,89,10758.32,4357.12
+Nutrition,13,SKU00041,Sample Product 00041,88,5903.92,1718.04
+Nutrition,14,SKU01046,Sample Product 01046,85,1753.55,413.84
+Nutrition,15,SKU00481,Sample Product 00481,84,9834.72,3274.96
+Nutrition,16,SKU00132,Sample Product 00132,81,2767.77,639.35
+Nutrition,17,SKU00567,Sample Product 00567,75,16353.75,5609.34
+Nutrition,18,SKU01041,Sample Product 01041,74,338.92,104.73
+Nutrition,19,SKU01200,Sample Product 01200,73,4404.82,1317.04
+Nutrition,20,SKU01437,Sample Product 01437,73,798.62,276.32
+General Merchandise,1,SKU00634,Sample Product 00634,221,21814.91,5606.43
+General Merchandise,2,SKU00036,Sample Product 00036,189,13129.83,6092.24
+General Merchandise,3,SKU00045,Sample Product 00045,179,2813.88,740.05
+General Merchandise,4,SKU01312,Sample Product 01312,130,38273.3,13510.47
+General Merchandise,5,SKU00169,Sample Product 00169,118,1351.1,464.78
+General Merchandise,6,SKU01423,Sample Product 01423,112,19781.44,4965.14
+General Merchandise,7,SKU01297,Sample Product 01297,104,1500.72,438.21
+General Merchandise,8,SKU00929,Sample Product 00929,92,24364.36,10159.94
+General Merchandise,9,SKU00789,Sample Product 00789,90,2161.8,786.9
+General Merchandise,10,SKU00021,Sample Product 00021,85,6431.95,2810.76
+General Merchandise,11,SKU01398,Sample Product 01398,75,3954.75,1000.55
+General Merchandise,12,SKU01199,Sample Product 01199,73,18588.72,5018.95
+General Merchandise,13,SKU00566,Sample Product 00566,69,12187.47,4143.74
+General Merchandise,14,SKU00835,Sample Product 00835,66,3268.98,1225.87
+General Merchandise,15,SKU01460,Sample Product 01460,65,14816.75,8060.31
+General Merchandise,16,SKU00056,Sample Product 00056,65,10998.65,4927.4
+General Merchandise,17,SKU00482,Sample Product 00482,65,615.55,266.53
+General Merchandise,18,SKU01173,Sample Product 01173,64,17094.4,5983.04
+General Merchandise,19,SKU00136,Sample Product 00136,64,4189.44,1273.59
+General Merchandise,20,SKU01077,Sample Product 01077,63,9431.1,4310.01

@@ -1,0 +1,14 @@
+{
+  "name": "Pharmacy Portfolio",
+  "dataColors": [
+    "#1f4e78",
+    "#2f75b5",
+    "#70ad47",
+    "#ed7d31",
+    "#a5a5a5",
+    "#ffc000"
+  ],
+  "background": "#ffffff",
+  "foreground": "#1f2937",
+  "tableAccent": "#2f75b5"
+}

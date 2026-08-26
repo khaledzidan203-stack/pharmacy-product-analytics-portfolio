@@ -1,0 +1,7 @@
+Area,Key Finding,Evidence / Metric,Business Impact,Recommendation,Priority
+SKU Status,"1,225 of 1,500 SKUs are Active.",81.7% Active,Defines the addressable assortment.,Review Blocked items separately before reactivation or delisting decisions.,Medium
+Category Performance,Personal Care leads Sales Value in the synthetic sample.,"SAR 1,042,231",Shows where revenue concentration is highest.,Protect availability for leading items and investigate transferable performance drivers.,High
+TGM%,Personal Care has the highest Average Active TGM%.,38.7%,Higher margin quality can support profitable growth.,Prioritize growth where margin and demand are both healthy.,Medium
+Zero Sales Risk,129 Active SKUs have zero sales.,"SAR 406,474 risk proxy",Non-moving stock can tie up working capital.,"Review assortment, transfer stock, promote, or stop replenishment based on item context.",High
+Inventory Risk,Medical Devices has the highest zero-sales risk proxy.,"SAR 112,799",Concentrated exposure merits category-level action.,Start detailed SKU review in the highest-risk category.,High
+Supplier Dependency,3 Sub-Categories rely on one supplier among Active SKUs.,3 dependencies,Single-source exposure may reduce continuity resilience.,Assess alternate suppliers or contingency plans for critical sub-categories.,High

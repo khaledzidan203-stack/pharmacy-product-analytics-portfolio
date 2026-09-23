@@ -4,6 +4,18 @@ A recruiter-ready **Data Analyst / Business Analyst** portfolio project demonstr
 
 > **Public-data notice:** every row in this repository is synthetic. No proprietary business dataset, customer/patient/employee information, prescription information, credentials, internal endpoints, or production identifiers are included.
 
+## Featured Portfolio
+
+**Khaled Zidan — Healthcare & Business Data Analytics**
+
+[Saudi Healthcare Analytics](https://github.com/khaledzidan203-stack/saudi-healthcare-analytics) ·
+[Hospital360](https://github.com/khaledzidan203-stack/Hospital360) ·
+[Online Retail Growth & Customer Intelligence](https://github.com/khaledzidan203-stack/online-retail-growth-customer-intelligence) ·
+[Pharmacy Category Management](https://github.com/khaledzidan203-stack/pharmacy-category-management) ·
+[Regional Sales Performance](https://github.com/khaledzidan203-stack/regional-sales-analytics-portfolio)
+
+**Core stack:** Power BI · SQL · Python · DAX · Analytics Engineering · Healthcare / Pharmacy / Retail Analytics
+
 ## Executive summary
 This project models a common retail-pharmacy analytics problem: understand assortment status, category performance, gross margin, zero-sales inventory exposure, product leaders, and supplier dependency from a clean product-level dataset. A single public Clean Master Dataset feeds multiple analytical implementations so results can be cross-validated.
 

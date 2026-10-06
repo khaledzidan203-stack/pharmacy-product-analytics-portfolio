@@ -1,15 +1,18 @@
 # Public Release Verification
 
-The repository was prepared as a public portfolio artifact with the following controls:
+The repository is designed for safe public use with the following controls:
 
-- The checked-in product dataset is generated synthetically from a fixed seed.
-- Product names, suppliers, manufacturers, quantities, financial values, and regulatory codes are synthetic.
-- No source `.xlsb` files are included.
-- No live data connectors are required.
-- SQL uses a generic local database name and contains no production server address or connection string.
-- No API keys, tokens, passwords, or secret values are included.
-- No customer, patient, employee, prescription, or government-ID rows are included.
-- The dashboard screenshot is rendered from synthetic result values only.
-- Business rules are generalized and documented as portfolio demonstration logic.
+- [x] The checked-in product dataset is generated synthetically from a fixed seed.
+- [x] Product names, suppliers, manufacturers, quantities, financial values and regulatory codes are synthetic.
+- [x] No source production workbooks are included.
+- [x] No live data connectors are required.
+- [x] SQL uses a generic local database design and no production server address or connection string.
+- [x] No API keys, tokens, passwords or secret values are included.
+- [x] No customer, patient, employee, prescription or government-ID rows are included.
+- [x] The dashboard screenshot uses synthetic values only.
+- [x] Business rules are generalized.
+- [x] Power BI runtime implementation is not overstated.
+- [x] Cross-tool runtime reconciliation is not claimed while the checklist remains pending.
+- [x] Automated repository and reproducibility validation is included.
 
-The author attribution is intentionally included for portfolio ownership.
+Future changes should repeat these controls before publication.

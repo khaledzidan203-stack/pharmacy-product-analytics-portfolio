@@ -3,6 +3,9 @@
 ## SKU Performance, Zero-Sales Risk, Margin Quality & Supplier Dependency
 
 [![Repository Validation](https://github.com/khaledzidan203-stack/pharmacy-product-analytics-portfolio/actions/workflows/validate.yml/badge.svg)](https://github.com/khaledzidan203-stack/pharmacy-product-analytics-portfolio/actions/workflows/validate.yml)
+[![Deploy static dashboard to GitHub Pages](https://github.com/khaledzidan203-stack/pharmacy-product-analytics-portfolio/actions/workflows/pages.yml/badge.svg)](https://github.com/khaledzidan203-stack/pharmacy-product-analytics-portfolio/actions/workflows/pages.yml)
+
+**Live dashboard:** https://khaledzidan203-stack.github.io/pharmacy-product-analytics-portfolio/
 
 Pharmacy Product & Assortment Analytics is a synthetic, SKU-level analytical implementation for evaluating assortment status, sales, profit, margin quality, zero-sales inventory risk, top performers and supplier concentration across multiple analytical tools.
 
@@ -35,6 +38,7 @@ Pharmacy Product & Assortment Analytics is a synthetic, SKU-level analytical imp
 | HTML | interactive filterable dashboard |
 | Power BI | DAX / Power Query / theme / build guide only; no PBIP/PBIR/TMDL/PBIX runtime artifact |
 | CI | automated schema/formula/privacy/reproducibility checks |
+| Deployment | GitHub Pages static dashboard deployment |
 
 ## Business problem
 

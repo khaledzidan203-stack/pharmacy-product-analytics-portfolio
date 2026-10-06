@@ -35,7 +35,61 @@ def main():
         txt=p.read_text(encoding='utf-8',errors='ignore')
         for pat in SECRET_PATTERNS:
             if pat.search(txt): errors+=fail(f'Potential secret-like pattern in {p.relative_to(ROOT)}')
+    # Retained KPI baseline contract
+    kpi_path=ROOT/'outputs'/'kpi_summary.csv'
+    with kpi_path.open(encoding='utf-8',newline='') as f:
+        kpis={r['Metric']:r['Value'] for r in csv.DictReader(f)}
+    expected_kpis={
+        'Total SKUs':'1500',
+        'Active SKUs':'1225',
+        'Blocked SKUs':'275',
+        'Active %':'81.67',
+        'Blocked %':'18.33',
+        'Total Sales Quantity':'37488',
+        'Total Sales Value':'3722472.1',
+        'Total Profit Value':'1249396.7',
+        'Average TGM% (Active)':'33.51',
+        'Zero Sales Active SKUs':'129',
+        'Inventory Financial Risk':'406473.61',
+    }
+    for k,v in expected_kpis.items():
+        if kpis.get(k)!=v:
+            errors+=fail(f'KPI baseline changed for {k}: {kpis.get(k)} != {v}')
+
+    # Presentation / implementation boundary contract
+    required=[
+        ROOT/'README.md',
+        ROOT/'PROJECT_NOTES.md',
+        ROOT/'docs'/'PROJECT_INDEX.md',
+        ROOT/'docs'/'CASE_STUDY.md',
+        ROOT/'docs'/'TECHNICAL_WALKTHROUGH.md',
+        ROOT/'docs'/'PROJECT_EVIDENCE_MAP.md',
+        ROOT/'docs'/'FINAL_RELEASE_VALIDATION.md',
+        ROOT/'docs'/'assets'/'Pharmacy Analytics Dashboard Overview.png',
+        ROOT/'excel'/'Pharmacy_Assessment_Excel_Analysis.xlsx',
+        ROOT/'sql'/'Pharmacy_Assessment_SQL_Outputs.xlsx',
+    ]
+    for p in required:
+        if not p.exists():
+            errors+=fail(f'Missing required project artifact: {p.relative_to(ROOT)}')
+
+    index=(ROOT/'index.html').read_text(encoding='utf-8')
+    for old in ['Portfolio demonstration','Developed by Khaled Zidan','Public portfolio demo']:
+        if old in index:
+            errors+=fail(f'Old presentation wording remains in index.html: {old}')
+
+    readme=(ROOT/'README.md').read_text(encoding='utf-8')
+    if 'Pharmacy%20Analytics%20Dashboard%20Overview.png' not in readme:
+        errors+=fail('README hero image link missing')
+    if 'Power BI is therefore a **design blueprint**' not in readme:
+        errors+=fail('Power BI implementation boundary missing from README')
+
     if errors: sys.exit(1)
-    print('Repository validation passed: schema, formulas, IDs, and secret-pattern scan.')
+    print('PASS | schema and row formulas')
+    print('PASS | unique SKU and status rules')
+    print('PASS | retained KPI baseline')
+    print('PASS | presentation / evidence boundary')
+    print('PASS | secret-pattern scan')
+    print('REPOSITORY VALIDATION PASS')
 
 if __name__=='__main__': main()

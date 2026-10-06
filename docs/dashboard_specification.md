@@ -1,18 +1,48 @@
 # Dashboard Specification
 
-## Executive Overview
-KPI cards for Total SKUs, Active SKUs, Blocked SKUs, Sales Quantity, Profit Value, Average Active TGM%, Zero-Sales Active SKUs, and Inventory Risk. Visuals: Active/Blocked split, Category Sales Value, and a concise risk summary.
+## Implemented HTML dashboard
 
-## Category & TGM Analysis
-Category distribution, Sales/Profit by Category, Average Active TGM% by Category, and Category filter.
+The browser implementation provides one analytical dashboard surface with filters and several analytical sections.
 
-## Zero Sales & Inventory Risk
-Active zero-sales count and risk by Category, Supplier, and Price Range. Include a detail table sorted by highest Inventory Risk Value.
+### Filters
 
-## Top 20 Performers
-Two ranked tables: Top 20 by Sales Quantity and Top 20 by Profit Value per Category.
+- Status
+- Category
+- Supplier
+- Price Range
+- compatible CSV upload
 
-## Supplier Dependency
-Supplier performance table and Sub-Category dependency table where Supplier Count = 1.
+### KPI cards
 
-All public dashboard visuals should state **Developed by Khaled Zidan** and should use only synthetic data.
+- Total SKUs
+- Active SKUs
+- Blocked SKUs
+- Sales Quantity
+- Sales Value
+- Profit Value
+- Average Active TGM%
+- Inventory Risk
+
+### Analytical sections
+
+- Active vs Blocked
+- Sales Value by Category
+- Average Active TGM% by Category
+- Zero-Sales Inventory Risk by Category
+- Dynamic Key Findings
+- Top Items by Sales Quantity
+- Single-Supplier Sub-Category Dependency
+
+## Power BI design pages
+
+The Power BI blueprint proposes:
+
+1. Executive Overview
+2. Category & TGM Analysis
+3. Zero Sales & Inventory Risk
+4. Top 20 Performers
+5. Supplier Dependency
+
+These are design specifications only; no Power BI runtime report is committed.
+
+All published visuals and screenshots must use synthetic data only.

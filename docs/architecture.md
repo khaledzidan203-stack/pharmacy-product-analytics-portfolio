@@ -2,18 +2,35 @@
 
 ```mermaid
 flowchart LR
-    A[Synthetic CSV] --> B[Python Validation & Example Outputs]
-    A --> C[SQL Server]
-    A --> D[Power BI]
+    A[Deterministic Synthetic SKU CSV] --> B[Python Validation & Example Outputs]
+    A --> C[Excel Analytical Workbook]
+    A --> D[SQL Server Implementation]
     A --> E[HTML Dashboard]
-    B --> F[Cross-Tool Validation]
-    C --> F
-    D --> F
-    E --> F
+    A --> F[Power BI Design Blueprint]
+    B --> G[Shared KPI Baseline]
+    C --> H[Cross-Tool Validation Framework]
+    D --> H
+    E --> H
+    F --> H
+    G --> H
 ```
 
 ## Design principle
-`data/sample_pharmacy_products.csv` is the public **Clean Master Dataset**. Every analytical layer uses the same field definitions and KPI rules so differences are attributable to tool implementation rather than changing source logic.
+
+`data/sample_pharmacy_products.csv` is the public **Clean Master Dataset**.
+
+The analytical grain is one synthetic SKU per row. The same public definitions are used to make tool differences visible rather than silently changing business logic between implementations.
+
+## Implementation boundaries
+
+- **Python** — executable generation, validation and retained-output logic.
+- **Excel** — checked-in workbook artifact.
+- **SQL Server** — T-SQL implementation and example exported output workbook.
+- **HTML** — implemented interactive dashboard.
+- **Power BI** — design blueprint only.
+
+Cross-tool runtime reconciliation remains a framework until all comparison cells are supported by fresh execution evidence.
 
 ## Security boundary
-The portfolio repository is fully decoupled from any production source. No live connectors, credentials, internal hosts, customer records, employee records, prescription records, or proprietary row-level data are required.
+
+No live production connector, credential, internal host, customer record, employee record, prescription record or proprietary row-level dataset is required.

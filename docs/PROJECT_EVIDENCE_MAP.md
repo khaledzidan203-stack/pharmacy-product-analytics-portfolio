@@ -18,6 +18,7 @@
 | Excel analytical workbook exists | `excel/Pharmacy_Assessment_Excel_Analysis.xlsx` | Artifact |
 | SQL Server implementation exists | `sql/*.sql` + SQL output workbook | Source + artifact |
 | HTML dashboard implemented | `index.html`, `src/dashboard.js`, screenshot | Runtime artifact |
+| GitHub Pages deployment | `.github/workflows/pages.yml` + successful deployment run | Deployment evidence |
 | Power BI runtime implementation | No PBIP/PBIR/TMDL/PBIX committed | **Not claimed** |
 | Full fresh cross-tool runtime reconciliation | `validation_summary.csv` says Pending cross-tool run | **Not claimed** |
 

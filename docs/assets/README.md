@@ -2,33 +2,42 @@
 
 This directory contains presentation-only visual assets for the Pharmacy Product & Assortment Analytics project.
 
-## Intended use
+## Current overview
 
-The primary overview image stored here is used by the repository README to summarize the analytical workflow at a glance.
+`Pharmacy Analytics Dashboard Overview.png`
 
-Recommended filename:
+The root README uses this image as a high-level visual summary.
 
-`pharmacy_product_assortment_analytics_overview.png`
+## Evidence-supported scope
 
-The overview should represent only repository-supported claims, including:
+The repository supports:
 
-- fully synthetic SKU-level pharmacy product data;
-- 1,500 SKUs at product-master grain;
-- Active vs Blocked assortment analysis;
-- Sales Quantity, Sales Value, Profit Value, and Average Active TGM%;
-- Active zero-sales SKU identification;
-- inventory-risk proxy based on retail value;
-- Top 20 ranking within Category;
-- supplier concentration and single-supplier dependency analysis;
-- deterministic Python data generation and repository validation;
-- reproducible example outputs;
+- 1,500 deterministic synthetic SKU records;
+- Active / Blocked assortment analysis;
+- Sales Quantity, Sales Value and Profit Value;
+- arithmetic Average Active TGM%;
+- Active zero-sales SKU analysis;
+- retail-value inventory-risk proxy;
+- category-level performance;
+- Top-N product ranking;
+- single-supplier Sub-Category dependency analysis;
+- deterministic Python generation and validation;
 - Excel analytical workbook;
-- SQL Server schema, quality checks, views, and analytical queries;
-- interactive HTML/CSS/JavaScript dashboard;
-- Power BI DAX / Power Query / theme as a design blueprint only.
+- SQL Server implementation artifacts;
+- interactive HTML dashboard;
+- Power BI design/reference files.
 
 ## Evidence boundary
 
-Assets in this directory are presentation summaries only. They are not source data, runtime validation evidence, SQL execution evidence, Excel formula evidence, or Power BI runtime evidence.
+The infographic is a **presentation schematic**, not a literal screenshot of every implemented feature.
 
-Authoritative claims remain defined by the committed synthetic CSV, Python generator and validators, checked-in example outputs, SQL scripts, Excel workbook, HTML dashboard, KPI/methodology documentation, and GitHub Actions workflow.
+Exact tool status is governed by the repository:
+
+- Python: implemented and executed in CI.
+- Excel: workbook artifact retained.
+- SQL Server: scripts and exported example output workbook retained; SQL runtime is not executed in CI.
+- HTML: implemented dashboard.
+- Power BI: design blueprint only; no PBIP/PBIR/TMDL/PBIX runtime implementation is committed.
+- GitHub Pages: only considered implemented when the deployment workflow succeeds.
+
+Any labels, counts or UI concepts shown in the graphic that are not explicitly supported by repository evidence should be treated as illustrative rather than authoritative.

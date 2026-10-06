@@ -38,6 +38,6 @@ Exact tool status is governed by the repository:
 - SQL Server: scripts and exported example output workbook retained; SQL runtime is not executed in CI.
 - HTML: implemented dashboard.
 - Power BI: design blueprint only; no PBIP/PBIR/TMDL/PBIX runtime implementation is committed.
-- GitHub Pages: only considered implemented when the deployment workflow succeeds.
+- GitHub Pages: implemented through `.github/workflows/pages.yml`; deployment has completed successfully.
 
 Any labels, counts or UI concepts shown in the graphic that are not explicitly supported by repository evidence should be treated as illustrative rather than authoritative.

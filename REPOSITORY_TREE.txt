@@ -1,23 +1,34 @@
 pharmacy-product-analytics-portfolio/
 ├── .github/
 │   └── workflows/
+│       ├── pages.yml
 │       └── validate.yml
 ├── data/
 │   ├── data_dictionary.csv
 │   ├── README.md
 │   └── sample_pharmacy_products.csv
 ├── docs/
+│   ├── assets/
+│   │   ├── Pharmacy Analytics Dashboard Overview.png
+│   │   └── README.md
 │   ├── analytical_methodology.md
 │   ├── architecture.md
 │   ├── business_requirements.md
+│   ├── CASE_STUDY.md
 │   ├── cross_tool_validation.md
 │   ├── dashboard_specification.md
 │   ├── data_model.md
 │   ├── data_privacy.md
+│   ├── ENVIRONMENT_BASELINE.md
+│   ├── FINAL_RELEASE_VALIDATION.md
 │   ├── github_upload.md
 │   ├── installation.md
 │   ├── kpi_definitions.md
+│   ├── PROJECT_EVIDENCE_MAP.md
+│   ├── PROJECT_INDEX.md
 │   ├── public_release_verification.md
+│   ├── README.md
+│   ├── TECHNICAL_WALKTHROUGH.md
 │   └── usage.md
 ├── excel/
 │   ├── Pharmacy_Assessment_Excel_Analysis.xlsx
@@ -42,6 +53,7 @@ pharmacy-product-analytics-portfolio/
 │   └── README.md
 ├── scripts/
 │   ├── build_example_outputs.py
+│   ├── check_reproducibility.py
 │   ├── generate_synthetic_data.py
 │   └── validate_repository.py
 ├── sql/
@@ -63,7 +75,7 @@ pharmacy-product-analytics-portfolio/
 ├── CONTRIBUTING.md
 ├── index.html
 ├── LICENSE
-├── PORTFOLIO_NOTES.md
+├── PROJECT_NOTES.md
 ├── README.md
 ├── requirements.txt
 └── SECURITY.md

@@ -1,140 +1,355 @@
-# Pharmacy Product Analytics Portfolio
+# Pharmacy Product & Assortment Analytics
 
-A recruiter-ready **Data Analyst / Business Analyst** portfolio project demonstrating an end-to-end product-performance workflow across CSV/Python validation, SQL Server, Power BI design, and a browser-based HTML dashboard.
+## SKU Performance, Zero-Sales Risk, Margin Quality & Supplier Dependency
 
-> **Public-data notice:** every row in this repository is synthetic. No proprietary business dataset, customer/patient/employee information, prescription information, credentials, internal endpoints, or production identifiers are included.
+[![Repository Validation](https://github.com/khaledzidan203-stack/pharmacy-product-analytics-portfolio/actions/workflows/validate.yml/badge.svg)](https://github.com/khaledzidan203-stack/pharmacy-product-analytics-portfolio/actions/workflows/validate.yml)
 
-## Featured Portfolio
+Pharmacy Product & Assortment Analytics is a synthetic, SKU-level analytical implementation for evaluating assortment status, sales, profit, margin quality, zero-sales inventory risk, top performers and supplier concentration across multiple analytical tools.
 
-**Khaled Zidan — Healthcare & Business Data Analytics**
+> **Data boundary:** every SKU, product name, supplier, manufacturer, regulatory code, quantity and financial value in this repository is synthetic. No proprietary pharmacy master data, customer data, patient data, prescription data, credentials or internal business-system data is included.
 
-[Saudi Healthcare Analytics](https://github.com/khaledzidan203-stack/saudi-healthcare-analytics) ·
-[Hospital360](https://github.com/khaledzidan203-stack/Hospital360) ·
-[Online Retail Growth & Customer Intelligence](https://github.com/khaledzidan203-stack/online-retail-growth-customer-intelligence) ·
-[Pharmacy Category Management](https://github.com/khaledzidan203-stack/pharmacy-category-management) ·
-[Regional Sales Performance](https://github.com/khaledzidan203-stack/regional-sales-analytics-portfolio)
+<img src="docs/assets/Pharmacy%20Analytics%20Dashboard%20Overview.png" alt="Pharmacy Product and Assortment Analytics overview" width="100%">
 
-**Core stack:** Power BI · SQL · Python · DAX · Analytics Engineering · Healthcare / Pharmacy / Retail Analytics
+> **Visual evidence note:** the infographic is a presentation schematic. Exact KPI values, tool boundaries and implementation status are governed by the source files, checked-in outputs and validation documentation below.
 
-## Executive summary
-This project models a common retail-pharmacy analytics problem: understand assortment status, category performance, gross margin, zero-sales inventory exposure, product leaders, and supplier dependency from a clean product-level dataset. A single public Clean Master Dataset feeds multiple analytical implementations so results can be cross-validated.
+**Start here:** [Case study](docs/CASE_STUDY.md) · [Technical walkthrough](docs/TECHNICAL_WALKTHROUGH.md) · [Evidence map](docs/PROJECT_EVIDENCE_MAP.md) · [Project index](docs/PROJECT_INDEX.md) · [Final validation](docs/FINAL_RELEASE_VALIDATION.md)
+
+## Project at a glance
+
+| Area | Current implementation |
+|---|---|
+| Analytical grain | One synthetic SKU per row |
+| Synthetic dataset | 1,500 SKUs generated with fixed seed `20260826` |
+| Active assortment | 1,225 SKUs (81.67%) |
+| Blocked assortment | 275 SKUs (18.33%) |
+| Sales quantity | 37,488 units |
+| Sales value | SAR 3,722,472.10 |
+| Profit value | SAR 1,249,396.70 |
+| Average Active TGM% | 33.51% arithmetic average across Active SKUs |
+| Active zero-sales SKUs | 129 |
+| Inventory-risk proxy | SAR 406,473.61 |
+| Supplier dependency | 3 sub-categories with one Active supplier |
+| Python | deterministic data generator, output builder and repository validation |
+| Excel | checked-in analytical workbook |
+| SQL Server | schema, quality checks, views, analysis queries + example output workbook |
+| HTML | interactive filterable dashboard |
+| Power BI | DAX / Power Query / theme / build guide only; no PBIP/PBIR/TMDL/PBIX runtime artifact |
+| CI | automated schema/formula/privacy/reproducibility checks |
 
 ## Business problem
-Product and category teams need to distinguish healthy assortment from non-moving stock, identify high-performing SKUs, understand category-level margin quality, and detect supplier concentration that could create continuity risk.
 
-## Project objectives
-- Build a reproducible Clean Master Dataset suitable for multiple analytical tools.
-- Measure SKU status, sales, profit, TGM%, zero-sales risk, and supplier concentration.
-- Produce reusable SQL views and ranking queries.
-- Define a five-page Power BI report design and DAX measure layer.
-- Provide a working HTML dashboard for recruiters to run locally or host on GitHub Pages.
-- Demonstrate cross-tool validation and public-data governance.
+A product or category team needs to understand more than total sales. Assortment decisions require a consistent view of:
 
-## Dataset description
-`data/sample_pharmacy_products.csv` contains **1,500 synthetic SKU rows** across five generic pharmacy-retail categories. The grain is one SKU per row. The dataset includes Status, Category, Sub-Category, Supplier, RSP, TGM%, Sales Quantity, Stock on Hand, Sales/Profit values, and derived zero-sales/risk fields.
+- which SKUs are Active versus Blocked;
+- which categories drive Sales Value and Profit Value;
+- where margin quality is strongest or weakest;
+- which Active products have zero sales while still carrying stock;
+- which SKUs rank highest within their categories;
+- where supplier concentration creates dependency;
+- which findings merit assortment, replenishment, transfer, supplier or margin review.
 
-See `data/data_dictionary.csv` and `docs/data_model.md`.
+This repository implements those questions from one public synthetic clean-master dataset.
 
-## Tools and technologies
-- **Excel / Power Query:** a downloadable synthetic analysis workbook with formula-driven Clean Data, KPI, category/TGM, zero-sales, Top 20, supplier, findings, dashboard, and process sheets.
-- **SQL Server:** database table, data-quality checks, Views, window functions, Top-N ranking.
-- **Power BI:** Power Query M reference, DAX measures, report-page specification, theme JSON.
-- **HTML / CSS / JavaScript:** interactive filterable dashboard with no framework dependency.
-- **Python:** reproducible example-output calculation and repository validation using the standard library.
-- **GitHub Actions:** automated validation workflow.
+## End-to-end analytical flow
 
-## Data preparation
-The public model applies generalized rules rather than copying proprietary source logic:
-1. standardize status to `Active` / `Blocked`;
-2. validate one row per SKU;
-3. derive `Sales_Value = RSP × Sales_Qty`;
-4. derive `Profit_Value = Sales_Value × TGM_Pct`;
-5. derive `Inventory_Value = RSP × SOH` as a demonstration retail-value proxy;
-6. flag Active zero-sales SKUs;
-7. assign price bands;
-8. assign risk value only to Active zero-sales inventory.
-
-## Data model
-The project uses one denormalized analytical table (`PharmacyProducts`) at SKU grain. This makes the same metric logic easy to validate across SQL Server, Power BI, and the HTML layer. See `docs/data_model.md`.
-
-## KPIs
-Core KPIs include Total/Active/Blocked SKUs, Active %, Total Sales Quantity/Value, Profit Value, Average Active TGM%, Active Zero-Sales SKUs, Inventory Financial Risk, Top 20 by Category, and single-supplier Sub-Category dependency. Definitions are in `docs/kpi_definitions.md`.
-
-## Analytical methodology
-The workflow combines data-quality validation, descriptive analytics, risk segmentation, within-category ranking, supplier concentration analysis, and cross-tool reconciliation. Full method: `docs/analytical_methodology.md`.
-
-## Dashboard / report structure
-1. **Executive Overview**
-2. **Category & TGM Analysis**
-3. **Zero Sales & Inventory Risk**
-4. **Top 20 Performers**
-5. **Supplier Dependency**
-
-The root `index.html` is a working portfolio demo. Power BI build instructions are under `powerbi/`.
-
-## Key insights demonstrated by the project
-The checked-in synthetic sample demonstrates the following reproducible observations:
-- Synthetic dataset contains 1,500 SKUs; 81.7% are Active.
-- Personal Care has the highest synthetic Sales Value at SAR 1,042,231.
-- Personal Care has the highest average Active TGM at 38.7%.
-- There are 129 Active zero-sales SKUs with a retail-value inventory-risk proxy of SAR 406,474.
-- 3 sub-categories are fully dependent on a single synthetic supplier in the Active assortment.
-
-These are **sample-data findings**, not claims about any real company.
-
-## Screenshots
-![Dashboard overview](screenshots/dashboard_overview.png)
-
-## Repository structure
 ```text
-pharmacy-product-analytics-portfolio/
-├── .github/workflows/validate.yml
-├── data/
-├── docs/
-├── excel/
-├── outputs/
-├── powerbi/
-├── screenshots/
-├── scripts/
-├── sql/
-├── src/
-├── index.html
-├── README.md
-├── PORTFOLIO_NOTES.md
-├── SECURITY.md
-├── CONTRIBUTING.md
-├── CHANGELOG.md
-├── LICENSE
-└── requirements.txt
+Deterministic Synthetic SKU Master
+        ↓
+Schema + Data Quality Validation
+        ↓
+Derived Commercial Metrics
+Sales · Profit · Inventory Value · Zero-Sales Flag · Risk Proxy · Price Band
+        ↓
+Product / Category Analytics
+        ↓
+Top-N Ranking + Supplier Dependency
+        ↓
+┌────────────┬────────────┬────────────┬────────────┐
+│   Python   │   Excel    │ SQL Server │    HTML    │
+│ baseline   │ workbook   │ reference  │ dashboard  │
+└────────────┴────────────┴────────────┴────────────┘
+        ↓
+Power BI Design Blueprint
+        ↓
+Business Findings & Action Review
 ```
 
-## Installation / setup
-### Browser demo
+The checked-in CSV is the public analytical source-of-truth for reproducible sample results.
+
+## Data model
+
+The project intentionally uses a single denormalized analytical table, `PharmacyProducts`, at **SKU grain**.
+
+This is not presented as a dimensional star schema. The flat clean-master structure is deliberate because it keeps business rules easy to reconcile across Python, SQL, Excel, HTML and the Power BI design reference.
+
+### Core dimensions
+
+- SKU
+- Item Name
+- Status
+- Category / Sub-Category
+- Supplier
+- Manufacturer
+- Creation Month
+- Price Range
+- Legal Status
+
+### Core measures
+
+- Sales Quantity
+- Sales Value
+- Profit Value
+- Stock on Hand
+- Inventory Value
+- Inventory Risk Value
+- TGM %
+
+## Governed derived rules
+
+The public model uses the following generalized rules:
+
+```text
+Sales Value      = RSP × Sales Quantity
+Profit Value     = Sales Value × TGM %
+Inventory Value  = RSP × SOH
+Zero-Sales Flag  = Active AND Sales Quantity = 0
+Inventory Risk   = Inventory Value for Active zero-sales SKUs; otherwise 0
+```
+
+**Inventory Risk Value is a retail-value analytical proxy. It is not an accounting write-off, impairment estimate or confirmed loss.**
+
+## KPI framework
+
+| KPI | Definition |
+|---|---|
+| Total SKUs | Distinct SKU count |
+| Active SKUs | SKUs where Status = Active |
+| Active % | Active SKUs / Total SKUs |
+| Total Sales Quantity | Sum of Sales_Qty |
+| Total Sales Value | Sum of Sales_Value |
+| Total Profit Value | Sum of Profit_Value |
+| Average Active TGM% | Arithmetic average of TGM_Pct across Active SKUs |
+| Active Zero-Sales SKUs | Active SKUs where Sales_Qty = 0 |
+| Inventory Financial Risk | Sum of Inventory_Risk_Value for Active zero-sales SKUs |
+| Supplier Dependency | Sub-Category has exactly one distinct supplier among Active SKUs |
+
+The Average Active TGM% is **not sales-weighted**.
+
+## Current synthetic findings
+
+The retained reproducible sample demonstrates:
+
+- **1,500** total SKUs;
+- **1,225 Active** and **275 Blocked** SKUs;
+- **37,488** units sold;
+- **SAR 3,722,472.10** Sales Value;
+- **SAR 1,249,396.70** Profit Value;
+- **33.51%** Average Active TGM%;
+- **129** Active zero-sales SKUs;
+- **SAR 406,473.61** inventory-risk proxy;
+- **3** single-supplier sub-category dependencies.
+
+### Category examples
+
+Personal Care currently leads the synthetic sample in:
+
+- Sales Value: **SAR 1,042,231.43**
+- Profit Value: **SAR 401,035.70**
+- Average Active TGM%: **38.68%**
+
+Medical Devices has the highest category-level Active zero-sales inventory-risk proxy at **SAR 112,798.82**.
+
+These are synthetic sample observations only.
+
+## Top-N ranking
+
+The SQL implementation uses window-function ranking within Category so each category can return its own Top 20 rather than using one global ranking.
+
+Conceptually:
+
+```sql
+ROW_NUMBER() OVER (
+    PARTITION BY Category
+    ORDER BY Sales_Qty DESC
+)
+```
+
+A parallel ranking is produced for Profit Value.
+
+## Supplier dependency
+
+A sub-category is flagged when its Active assortment has exactly one distinct supplier.
+
+The current synthetic sample contains:
+
+- Home Diagnostics → Supplier 003
+- Mobility Aids → Supplier 011
+- Travel Health → Supplier 019
+
+This is a concentration signal for review, not an automatic sourcing decision.
+
+## Implemented analytical layers
+
+### Python
+
+Python standard-library scripts provide:
+
+- deterministic synthetic generation;
+- schema/formula/privacy validation;
+- checked-in example-output generation;
+- reproducibility verification.
+
+### Excel
+
+`excel/Pharmacy_Assessment_Excel_Analysis.xlsx` is a checked-in analytical workbook covering clean data, KPIs, category/TGM analysis, zero-sales risk, Top 20, suppliers, findings and dashboard-oriented outputs.
+
+### SQL Server
+
+`sql/` contains:
+
+1. database creation;
+2. analytical table schema;
+3. quality checks;
+4. views;
+5. analytical queries.
+
+`sql/Pharmacy_Assessment_SQL_Outputs.xlsx` contains example exported result sets from the same synthetic analytical design.
+
+### HTML / JavaScript
+
+The root `index.html` and `src/dashboard.js` implement a filterable browser dashboard with:
+
+- Status filter;
+- Category filter;
+- Supplier filter;
+- Price Range filter;
+- compatible CSV upload;
+- KPI cards;
+- category sales and TGM analysis;
+- zero-sales risk;
+- Top Items;
+- supplier-dependency analysis;
+- dynamic findings.
+
+### Power BI boundary
+
+`powerbi/` contains:
+
+- `measures.dax`
+- `power_query_m.md`
+- theme JSON
+- build guide
+
+There is currently **no committed PBIP, PBIR, TMDL or PBIX implementation**.
+
+Power BI is therefore a **design blueprint**, not runtime evidence.
+
+## Cross-tool validation boundary
+
+The project defines a cross-tool validation framework, but `outputs/validation_summary.csv` currently records SQL, Power BI and HTML comparison as **Pending cross-tool run**.
+
+Therefore the repository does **not** claim that all tools have been freshly runtime-reconciled.
+
+Current evidence supports:
+
+- Python/CSV baseline generation;
+- SQL implementation artifacts and example exported outputs;
+- Excel workbook artifact;
+- implemented HTML dashboard;
+- Power BI design specifications.
+
+See [Cross-Tool Validation](docs/cross_tool_validation.md).
+
+## Automated validation
+
+GitHub Actions now checks:
+
+- exact 1,500-row dataset contract;
+- unique SKU;
+- expected schema;
+- row-level commercial formulas;
+- Active zero-sales flag logic;
+- secret-like patterns;
+- fixed synthetic-data seed;
+- deterministic regeneration of the committed CSV;
+- deterministic regeneration of checked-in analytical output files;
+- retained KPI baselines;
+- required project/evidence files;
+- Python compilation.
+
+## Dashboard
+
+![Dashboard overview](screenshots/dashboard_overview.png)
+
+This screenshot is evidence of the implemented synthetic-data HTML dashboard.
+
+## Quick Start
+
+### Run the browser dashboard
+
 ```bash
 python -m http.server 8000
 ```
-Then open `http://localhost:8000`.
 
-### Validation
+Then open:
+
+`http://localhost:8000`
+
+### Validate the repository
+
 ```bash
 python scripts/validate_repository.py
+python scripts/check_reproducibility.py
+```
+
+No third-party Python packages are required.
+
+### Rebuild example outputs
+
+```bash
 python scripts/build_example_outputs.py
 ```
 
-The Excel deliverable is `excel/Pharmacy_Assessment_Excel_Analysis.xlsx`. SQL example exports are in `sql/Pharmacy_Assessment_SQL_Outputs.xlsx`. For SQL Server and Power BI setup, see `docs/installation.md`.
+## Repository structure
 
-## How to use
-Use the checked-in synthetic CSV for a reproducible demo, or load another **schema-compatible non-sensitive** CSV from the dashboard file picker. SQL and DAX implementations intentionally use the same KPI definitions so you can compare outputs.
+```text
+data/                 synthetic clean-master dataset + data dictionary
+scripts/              generation, validation and output-building logic
+outputs/              retained analytical outputs
+excel/                analytical workbook
+sql/                  SQL Server implementation + example exports
+src/                  HTML dashboard JavaScript/CSS
+powerbi/              Power BI design blueprint
+screenshots/          implemented dashboard evidence
+docs/                 methodology, contracts and release evidence
+docs/assets/          presentation assets
+.github/workflows/    automated repository validation
+```
 
-## Skills demonstrated
-Data cleaning design, KPI engineering, dimensional thinking, SQL Views and window functions, DAX measure design, dashboard UX, zero-sales/risk analysis, supplier-concentration analysis, reproducibility, validation, documentation, and public-data governance.
+## Documentation
 
-## Future improvements
-- Add an actual `.pbix` built from this public dataset.
-- Add time-grain sales history for trend and seasonality analysis.
-- Add unit tests for SQL result equivalence.
-- Add a star-schema version for larger-scale BI modeling.
-- Add GitHub Pages deployment workflow.
+- [Project Index](docs/PROJECT_INDEX.md)
+- [Case Study](docs/CASE_STUDY.md)
+- [Technical Walkthrough](docs/TECHNICAL_WALKTHROUGH.md)
+- [Project Evidence Map](docs/PROJECT_EVIDENCE_MAP.md)
+- [Architecture](docs/architecture.md)
+- [Analytical Methodology](docs/analytical_methodology.md)
+- [Data Model](docs/data_model.md)
+- [KPI Definitions](docs/kpi_definitions.md)
+- [Cross-Tool Validation](docs/cross_tool_validation.md)
+- [Data Privacy](docs/data_privacy.md)
+- [Final Release Validation](docs/FINAL_RELEASE_VALIDATION.md)
 
-## License
-MIT. See `LICENSE`.
+## Limitations
+
+- All data is synthetic.
+- The analytical model is flat and SKU-grained, not a star schema.
+- The sample has no time-series sales fact, so trend/seasonality claims are not supported.
+- Average Active TGM% is not weighted by sales.
+- Inventory Risk Value is a retail-value proxy.
+- SQL example outputs are retained artifacts rather than CI-executed SQL Server tests.
+- Excel runtime formula recalc is not executed in GitHub Actions.
+- Power BI is design-only.
+- Full SQL/Power BI/HTML cross-tool runtime reconciliation is currently pending.
+
+Licensed under the [MIT License](LICENSE).
